@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: We exploit the scenario when two boxes in the same unit (row, column, 3x3 square, or diagonal) have the same two possible digit values. In this scenario, 
+the other boxes in the unit cannot possibly have those two digits as value. We can then eliminate those digits from the values in consideration in our search. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Diagonal units can be created similar to the row, column and 3x3 square units already created. After diagonals are added to the possible units, we can then create
+a constraint limiting each digit to only being used once on a diagonal.
 
 ### Install
 
